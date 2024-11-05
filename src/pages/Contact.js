@@ -59,22 +59,19 @@ const styles = {
     color: "#ffffff",
     padding: "20px",
     maxWidth: "500px",
-    margin:'0 auto',
+    margin: '0 auto',
     textAlign: "center",
     fontFamily: "Arial, sans-serif",
-    marginTop:'5%',
+    marginTop: '5%',
     marginBottom: "5%",
     boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+    width: '90%', // Adjusts to screen size
   },
   title: {
     fontSize: "20px",
     fontWeight: "bold",
     marginBottom: "45px",
-    color:'#000',
-  },
-  subtitle: {
-    fontSize: "14px",
-    marginBottom: "20px",
+    color: '#000',
   },
   contactInfo: {
     marginBottom: "20px",
@@ -83,10 +80,9 @@ const styles = {
   contactItem: {
     fontSize: "14px",
     margin: "5px 0",
-  
   },
   button: {
-    backgroundColor: "#ffae42", // Orange button color
+    backgroundColor: "#ffae42",
     color: "#ffffff",
     border: "none",
     borderRadius: "5px",
@@ -111,5 +107,34 @@ const styles = {
     borderRadius: "50%",
     marginTop: "10px",
   },
+  
+  // Media queries for responsiveness
+  '@media (max-width: 768px)': {
+    title: {
+      fontSize: "18px",
+      marginBottom: "35px",
+    },
+    contactItem: {
+      fontSize: "13px",
+    },
+    button: {
+      fontSize: "13px",
+      padding: "8px 18px",
+    },
+  },
+  '@media (max-width: 480px)': {
+    title: {
+      fontSize: "16px",
+      marginBottom: "25px",
+    },
+    card: {
+      padding: "15px",
+    },
+    button: {
+      fontSize: "12px",
+      padding: "7px 16px",
+    },
+  },
 };
+
 export default Contact;

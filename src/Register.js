@@ -39,6 +39,7 @@ const styles = {
     marginTop: "5%",
     marginBottom: "5%",
     boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+    width: '90%',
   },
   title: {
     fontSize: "20px",
@@ -53,10 +54,9 @@ const styles = {
   },
   detailItem: {
     fontSize: "14px",
-  
   },
   button: {
-    backgroundColor: "#ff6b6b", // Red button color for register
+    backgroundColor: "#ff6b6b",
     color: "#ffffff",
     border: "none",
     borderRadius: "5px",
@@ -65,6 +65,39 @@ const styles = {
     fontWeight: "bold",
     cursor: "pointer",
   },
+  
+  // Media queries for responsiveness
+  '@media (max-width: 768px)': {
+    title: {
+      fontSize: "18px",
+      marginBottom: "8px",
+    },
+    card:{
+      width:'80%',
+    },
+    detailItem: {
+      fontSize: "13px",
+    },
+    button: {
+      fontSize: "13px",
+      padding: "8px 18px",
+    },
+  },
+  '@media (max-width: 480px)': {
+    title: {
+      fontSize: "16px",
+      marginBottom: "5px",
+    },
+    card: {
+      padding: "15px",
+      width:'80%',
+    },
+    button: {
+      fontSize: "12px",
+      padding: "7px 16px",
+    },
+  },
 };
+
 
 export default Register;

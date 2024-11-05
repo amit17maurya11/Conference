@@ -6,10 +6,10 @@
 
 .card-container {
     display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    scroll-behavior: smooth;
-    padding: 20px 0;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    gap: 20px; /* Space between cards */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding: 20px 0; /* Padding around the container */
 }
 
 .section2 h2 {
@@ -20,16 +20,47 @@
 .carousel-buttons {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 10px 0;
+    gap: 10px; /* Space between buttons */
+    margin: 10px 0; /* Margin above and below buttons */
 }
 
 .scroll-button {
-    background-color: #222;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 5px;
+    background-color: #222; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* No border */
+    padding: 10px 15px; /* Padding inside button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Font size for button text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .section2 h2 {
+        font-size: 20px; /* Smaller font size for headings */
+    }
+
+    .section2-para {
+        line-height: 1.6em; /* Improved line height for readability */
+    }
+
+    .scroll-button {
+        font-size: 16px; /* Smaller button text */
+        padding: 8px 12px; /* Smaller padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .section2 h2 {
+        font-size: 18px; /* Further reduced heading size for small screens */
+    }
+
+    .scroll-button {
+        font-size: 14px; /* Further reduced button text */
+        padding: 6px 10px; /* Further reduced padding */
+    }
+
+    .card-container {
+        padding: 10px 0; /* Adjust padding for smaller screens */
+    }
 }

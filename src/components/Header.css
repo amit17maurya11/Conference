@@ -1,4 +1,4 @@
-/* Header.css */
+/* Header.css
 .header {
     background-color: #333;
     padding: 10px 20px;
@@ -31,7 +31,6 @@
   .navbar-left .nav-link {
     color: #fff;
     text-decoration: none;
-    /* margin-right: 15px; */
     margin-right: 50px;
   }
   
@@ -41,7 +40,6 @@
   }
   
   .register-btn {
-    /* background-color: #ff5722; */
     background-color: #C0392B;
     border-radius: 6px;
     border: none;
@@ -68,4 +66,229 @@
       margin: 5px 0;
     }
   }
-  
+   */
+/* Header.css */
+
+/* .header {
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(28deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.navbar-left,
+.navbar-right,
+.navbar-center {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1;
+}
+
+.navbar-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.1em;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.register-btn {
+  background-color: #C0392B;
+  border-radius: 6px;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar-center h3 {
+  background: -webkit-linear-gradient(#db3434, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left,
+  .navbar-right,
+  .navbar-center {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar-left.active,
+  .navbar-right.active,
+  .navbar-center.active {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+} */
+
+
+
+/* Header.css */
+
+/* Header.css */
+
+.header {
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+  background: linear-gradient(28deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.navbar-left,
+.navbar-right,
+.navbar-center {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left {
+  flex: 1;
+margin-left:20%;
+}
+
+.navbar-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.navbar-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1.1em;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+.register-btn {
+  background-color: #C0392B;
+  border-radius: 6px;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar-center h3 {
+  background: -webkit-linear-gradient(#db3434, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+/* Burger Menu for Small Screens */
+.burger-menu {
+  display: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-left,
+  .navbar-right {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .navbar-left.active,
+  .navbar-right {
+    display: flex; /* Show links when the burger menu is active */
+    align-items: center;
+  }
+
+  .burger-menu {
+    display: block;
+    position: absolute;
+    /* top: 15px; */
+    top:80px;
+    right: 20px;
+  }
+
+  .navbar-left .nav-link,
+  .navbar-right .register-btn {
+    margin: 10px 0;
+    font-size: 1em;
+  }
+}
+
+

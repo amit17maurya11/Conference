@@ -27,7 +27,7 @@ function Section2() {
   return (
     <section className="section2">
       <h2>The conference on the design, and engineering is focused on programming topics</h2>
-      <p>Eventor Collaborative, brought to you by IBM, Google and AWS, is where the most inventive and forward-thinking nonprofit leaders come together to discover emerging trends in fundraising and technology.</p>
+      <p className='section2-para'>Eventor Collaborative, brought to you by IBM, Google and AWS, is where the most inventive and forward-thinking nonprofit leaders come together to discover emerging trends in fundraising and technology.</p>
       
       <div className="carousel-buttons">
         <button onClick={() => scroll(-300)} className="scroll-button">◀</button>

@@ -1,8 +1,36 @@
+.about-container {
+    padding: 20px; /* Add some padding around the container */
+}
+
 .about-para {
     line-height: 1.6rem;
-    width: 60%;
-    margin: 0 auto;
-    text-align: justify;
-    margin-bottom:5%;
-    margin-top:5%;
+    width: 80%; /* Adjusted width for better responsiveness */
+    max-width: 800px; /* Set a maximum width */
+    margin: 0 auto; /* Centering the paragraph */
+    text-align: justify; /* Justify text for better readability */
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .about-para {
+        width: 90%; /* Increase width on medium screens */
+        font-size: 1rem; /* Adjust font size for better readability */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Adjust heading size */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-para {
+        width: 95%; /* Increase width on small screens */
+        font-size: 0.9rem; /* Further decrease font size for smaller devices */
+    }
+
+    h1 {
+        font-size: 1.2em; /* Further adjust heading size */
+    }
 }
