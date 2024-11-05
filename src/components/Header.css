@@ -1,0 +1,71 @@
+/* Header.css */
+.header {
+    background-color: #333;
+    padding: 10px 20px;
+    color: #fff;
+    background: linear-gradient(28deg, #e0c3fc 0%, #8ec5fc 100%);
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .navbar-left,
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+  }
+  
+  .navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar-left .nav-link {
+    color: #fff;
+    text-decoration: none;
+    /* margin-right: 15px; */
+    margin-right: 50px;
+  }
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  .register-btn {
+    /* background-color: #ff5722; */
+    background-color: #C0392B;
+    border-radius: 6px;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .navbar-center h3{
+    background: -webkit-linear-gradient(#db3434, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+ 
+
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-left, .navbar-right, .navbar-center {
+      display: flex;
+      justify-content: center;
+      margin: 5px 0;
+    }
+  }
+  

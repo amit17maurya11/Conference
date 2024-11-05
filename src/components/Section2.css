@@ -1,0 +1,35 @@
+.section2 {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+.section2 h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.scroll-button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
