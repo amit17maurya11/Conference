@@ -8,34 +8,41 @@ const Footer = () => {
         <div style={styles.logoSection}>
           <h2 style={styles.logo}>Workshop Organizers</h2>
           <p style={styles.description}>
-            Vasudeva Varma, IIIT Hyderabad<br /><br />Pushpak Bhattacharya, IIT Bombay
+            Vasudeva Varma, IIIT Hyderabad
+            <br />
+            <br />
+            Pushpak Bhattacharya, IIT Bombay
           </p>
         </div>
 
         {/* Links Section */}
         <div style={styles.linksSection}>
           <div style={styles.column}>
-            <h4 style={styles.columnTitle}>About</h4>
-            <a href="#" style={styles.link}>
+            <h4 style={styles.columnTitle}> <a href="/about" style={styles.link}>
+                About
+              </a></h4>
+            {/* <a href="#" style={styles.link}>
               Conference Schedule
-            </a>
+            </a> */}
           </div>
-          <div style={styles.column}>
+          {/* <div style={styles.column}>
             <h4 style={styles.columnTitle}>Enterprise</h4>
             <a href="#" style={styles.link}>
               Committees
             </a>
-          </div>
+          </div> */}
           <div style={styles.column}>
-            <h4 style={styles.columnTitle}>Contact</h4>
-            <a href="#" style={styles.link}>
+            <h4 style={styles.columnTitle}>
+              <a href="/contact" style={styles.link}>
+                Contact
+              </a>
+            </h4>
+            {/* <a href="#" style={styles.link}>
               Help Desk
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
-
-      {/* Copyright */}
       <div style={styles.copyright}>
         <p>© 2024 All rights reserved.</p>
       </div>
@@ -43,7 +50,6 @@ const Footer = () => {
   );
 };
 
-// Inline CSS styles with responsive adjustments
 const styles = {
   footer: {
     backgroundColor: "#1b1b1b",
@@ -104,7 +110,7 @@ const styles = {
   },
 
   /* Responsive adjustments */
-  '@media (max-width: 768px)': {
+  "@media (max-width: 768px)": {
     container: {
       flexDirection: "column",
       alignItems: "center",
@@ -133,7 +139,7 @@ const styles = {
       fontSize: "13px",
     },
   },
-  '@media (max-width: 480px)': {
+  "@media (max-width: 480px)": {
     footer: {
       padding: "15px 0",
     },

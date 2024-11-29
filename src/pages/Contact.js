@@ -12,28 +12,28 @@ const Contact = () => {
       <p style={styles.contactItem}>
           <strong style={{color:'#000'}}>Vasudeva Varma, IIIT Hyderabad</strong>
         </p>
-        <p style={styles.contactItem}>
+        {/* <p style={styles.contactItem}>
           <strong  style={{color:'#000'}}> Phone:1(232) 252 55 22</strong> 
-        </p>
+        </p> */}
         {/* <p style={styles.contactItem}>
           <strong>Location:</strong> 75 Street Sample, WI 63025
         </p> */}
         <p style={styles.contactItem}>
-          <strong  style={{color:'#000'}}>Mail: template@sample.com</strong>
+          <strong  style={{color:'#000'}}>Mail: template'at'sample.com</strong>
         </p>
       </div>
       <div style={styles.contactInfo}>
       <p style={styles.contactItem}>
       <strong style={{color:'#000'}}>Pushpak Bhattacharya, IIT Bombay</strong>
         </p>
-        <p style={styles.contactItem}>
+        {/* <p style={styles.contactItem}>
           <strong  style={{color:'#000'}}>Phone:1 (232) 252 55 22</strong> 
-        </p>
+        </p> */}
         {/* <p style={styles.contactItem}>
           <strong>Location:</strong> 75 Street Sample, WI 63025
         </p> */}
         <p style={styles.contactItem}>
-          <strong  style={{color:'#000'}}>Mail: template@sample.com</strong>
+          <strong  style={{color:'#000'}}>Mail: template'at'sample.com</strong>
         </p>
       </div>
       <button style={styles.button}>CONTACTS</button>

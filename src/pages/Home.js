@@ -9,9 +9,9 @@ function Home() {
   return (
     <div>
         <CarouselSection/>
-        <Section2/>
+        {/* <Section2/> */}
         <Section3/>
-        <ConferenceNews/>
+        {/* <ConferenceNews/> */}
       {/* <h1>Home Page</h1> */}
       {/* <p>Welcome to the Home Page</p> */}
     </div>
